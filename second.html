@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Little Electron Window</title>
+    
+    <!-- Generic CSS stuff-->
+    <style>
+    h1 {
+        text-align: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:medium;
+    }
+
+    body{
+        background-color:lightslategray;
+    }
+    p{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+    }
+    button{
+        width:100px;
+        height:35px;
+        background-color:mediumseagreen;
+        color:whitesmoke;
+        border-width: 0px;
+        border-radius: 10px;
+        outline:none;
+        -webkit-transition-duration: 0.4s;
+        transition-duration:0.4s;
+    }
+
+    button:hover{
+        background-color:whitesmoke;
+        color:black;
+        font-weight:bold;
+    }
+
+    </style>
+    
+    <!-- My backup Javascript supporting funcs-->
+    <script src="./second.js"></script>
+
+</head>
+
+<body>
+
+    <!--Happy Header-->
+<H1> I did it</H1>
+
+    <!-- Some action buttons.. javascript exploring-->
+<button onclick="myClickFunc()">BumpBump</button>
+<button onclick="clearCounter()">Clear</button>
+
+    <!-- Counter Func-->
+<div align="center">
+    <p id="counter"/>
+</div>
+
+    <!-- Notifications-->
+<div align="center">
+    <button onclick="notifyMe()">Notify Me!</button>
+</div>
+
+
+</body>
+
+</html>
